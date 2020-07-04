@@ -1,7 +1,19 @@
 import React from "react";
+import "./../../styles/PokeNavbar.scss";
 
 const PokeNavbar = () => {
-  return <h1>Holas soy un navbar</h1>;
+  return (
+    <div className="NAV">
+      <div className="NAV__title title_1">
+        <img className="Logo" src="./utils/pokemon.svg" alt="poke_logo" />
+        <p>PokeAPP</p>
+      </div>
+      <div className="NAV__title">Title2</div>
+      <div className="NAV__title">Title3</div>
+      <div className="NAV__title">Title4</div>
+      <div className="NAV__title">Title5</div>
+    </div>
+  );
 };
 
 export default PokeNavbar;

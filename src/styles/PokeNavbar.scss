@@ -1,0 +1,23 @@
+.NAV {
+  border: 3px solid red;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+
+  &__title {
+    font-size: 1.5em;
+    border: 3px solid green;
+
+    &:hover {
+      background-color: yellow;
+    }
+  }
+
+  .Logo {
+    height: 50px;
+  }
+
+  .title_1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
