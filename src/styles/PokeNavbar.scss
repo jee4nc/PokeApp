@@ -1,14 +1,22 @@
+@import "./_utils.scss";
+
 .NAV {
-  border: 3px solid red;
+  // border: 3px solid red;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+  background-color: $base-color;
 
   &__title {
-    font-size: 1.5em;
-    border: 3px solid green;
+    font-size: $font-size-navbar;
+    font-family: $font-navbar;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    // border: 3px solid green;
+    ;
 
     &:hover {
-      background-color: yellow;
+      background-color: $base-hover;
     }
   }
 
@@ -16,10 +24,11 @@
     height: 50px;
     align-self: center;
   }
+
   .Logo__container {
     display: grid;
     align-items: center;
-    align-content: center;
+    justify-items: center;
   }
 
   .title_1 {

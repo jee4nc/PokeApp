@@ -1,0 +1,20 @@
+@import "./utils.scss";
+
+.container {
+    border: red solid 4px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+
+    &__Title {
+        font-family: $font-main-section;
+    }
+}
+
+.container__Image {
+    height: 500px;
+}
+
+.container__Image img {
+    max-height: 100%;
+}
