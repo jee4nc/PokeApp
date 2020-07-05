@@ -14,6 +14,12 @@
 
   .Logo {
     height: 50px;
+    align-self: center;
+  }
+  .Logo__container {
+    display: grid;
+    align-items: center;
+    align-content: center;
   }
 
   .title_1 {

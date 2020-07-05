@@ -5,7 +5,9 @@ const PokeNavbar = () => {
   return (
     <div className="NAV">
       <div className="NAV__title title_1">
-        <img className="Logo" src="./utils/pokemon.svg" alt="poke_logo" />
+        <div className="Logo__container">
+          <img className="Logo" src="./utils/pokemon.svg" alt="poke_logo" />
+        </div>
         <p>PokeAPP</p>
       </div>
       <div className="NAV__title">Title2</div>
