@@ -1,10 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import "./../../styles/Seeker.scss";
 import { useForm } from "react-hook-form";
 
 const Seeker = () => {
   const { register, handleSubmit, errors } = useForm();
-  const onSubmit = (data) => console.log(data);
+  const [pokemonData, setPokemonData] = useState([]);
+
+  const Search = (pokemon) => {
+    const url = `https://pokeapi.co/api/v2/pokemon/${pokemon}`;
+
+    fetch(url)
+      .then((response) => response.json())
+      .then((data) => setPokemonData(data))
+      .catch((error) => console.log(error));
+  };
+
+  const onSubmit = (data) => {
+    console.log(data);
+    Search(data.seeker_pokemon);
+    console.log(pokemonData);
+  };
 
   return (
     <div>

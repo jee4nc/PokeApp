@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 //Importacion de componentes
 import TitleMain from "./components/atoms/TitleMain";
 import PokeNavbar from "./components/atoms/PokeNavbar";
-import Seeker from "./components/atoms/Seeker"
+import Seeker from "./components/atoms/Seeker";
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
         <PokeNavbar />
         <Switch>
           <Route extact path="/pokedex">
-            <Seeker/>
+            <Seeker />
           </Route>
           <Route extact path="/types">
             <h1>Hola soy pagina de tipos</h1>
