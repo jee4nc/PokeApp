@@ -35,4 +35,9 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .linked {
+    text-decoration: none;
+    color: black;
+  }
 }

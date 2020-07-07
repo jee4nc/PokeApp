@@ -5,7 +5,7 @@ import "./../../styles/PokeNavbar.scss";
 const PokeNavbar = () => {
   return (
     <div className="NAV">
-      <Link to="/">
+      <Link to="/" className="linked">
         <div className="NAV__title title_1">
           <div className="Logo__container">
             <img className="Logo" src="./utils/pokemon.svg" alt="poke_logo" />
@@ -15,20 +15,27 @@ const PokeNavbar = () => {
       </Link>
 
       <div className="NAV__title">
-        <Link to="/pokedex">Pokedex </Link>
+        <Link to="/pokedex" className="linked">
+          Pokedex
+        </Link>
       </div>
 
       <div className="NAV__title">
-        <Link to="/types">Tipos de Pokemon</Link>
+        <Link to="/types" className="linked">
+          Tipos de Pokemon
+        </Link>
       </div>
 
       <div className="NAV__title">
-        <Link to="/regions">Regiones</Link>
+        <Link to="/regions" className="linked">
+          Regiones
+        </Link>
       </div>
 
       <div className="NAV__title">
-        {" "}
-        <Link to="/objects">Objetos</Link>
+        <Link to="/objects" className="linked">
+          Objetos
+        </Link>
       </div>
     </div>
   );
