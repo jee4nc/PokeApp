@@ -1,24 +1,28 @@
 import React, { useState } from "react";
 import "./../../styles/Seeker.scss";
 import { useForm } from "react-hook-form";
+import parseUrl from "./ParseUrl";
+import axios from "axios";
 
 const Seeker = () => {
   const { register, handleSubmit, errors } = useForm();
-  const [pokemonData, setPokemonData] = useState([]);
 
-  const Search = (pokemon) => {
-    const url = `https://pokeapi.co/api/v2/pokemon/${pokemon}`;
+  const [state, setState] = useState([]);
 
-    fetch(url)
-      .then((response) => response.json())
-      .then((data) => setPokemonData(data))
-      .catch((error) => console.log(error));
+  const axiosGet = (var_pokemon) => {
+    axios
+      .get(parseUrl(var_pokemon))
+      .then(function (response) {
+        let datos = response.data;
+        setState(datos);
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
   };
 
-  const onSubmit = (data) => {
-    console.log(data);
-    Search(data.seeker_pokemon);
-    console.log(pokemonData);
+  const onSubmit = (dataOfForm) => {
+    axiosGet(dataOfForm.seeker_pokemon);
   };
 
   return (
