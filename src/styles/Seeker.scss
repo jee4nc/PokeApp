@@ -19,3 +19,34 @@
   justify-items: center;
   gap: 15px;
 }
+
+.imageApi {
+  width: 350px;
+}
+
+.pokeCard {
+  display: grid;
+  justify-items: center;
+}
+
+.pokeCard h3 {
+  border: 2px solid black;
+}
+
+.pokeCard p {
+  border: 2px solid black;
+}
+
+.theRialContainer {
+  display: grid;
+  border: 3px solid green;
+  justify-content: center;
+  justify-items: center;
+  width: 500px;
+}
+
+.ConContainer {
+  border: 4px solid purple;
+  display: grid;
+  justify-items: center;
+}

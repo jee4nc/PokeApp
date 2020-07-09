@@ -15,6 +15,7 @@ const Seeker = () => {
       .then(function (response) {
         let datos = response.data;
         setState(datos);
+        console.log("hola gente", datos);
       })
       .catch(function (error) {
         console.log(error);
@@ -23,10 +24,11 @@ const Seeker = () => {
 
   const onSubmit = (dataOfForm) => {
     axiosGet(dataOfForm.seeker_pokemon);
+    console.log("chao gente", state, axiosGet(dataOfForm.seeker_pokemon));
   };
 
   return (
-    <div>
+    <div className="ConContainer">
       <div className="Container_Title">
         <h1>Seeker of Pokemon :D!</h1>
       </div>
@@ -41,6 +43,23 @@ const Seeker = () => {
           {errors.seeker_pokemon && <span>This field is required</span>}
           <input type="submit" />
         </form>
+      </div>
+      <div className="theRialContainer">
+        {state.name && (
+          <div className="pokeCard">
+            <h3>Nombre del pokemon buscado:</h3>
+            <p>{state.name}</p>
+            <h3>Tamaño de pokemon buscado:</h3>
+            <p>{state.height}</p>
+            <h3>Nro de Pokedex del pokemon buscado:</h3>
+            <p>{state.order}</p>
+            <img
+              className="imageApi"
+              src={state.sprites.front_default}
+              alt="poke_img"
+            />
+          </div>
+        )}
       </div>
     </div>
   );
