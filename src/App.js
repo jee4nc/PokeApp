@@ -16,15 +16,6 @@ function App() {
           <Route extact path="/pokedex">
             <Seeker />
           </Route>
-          <Route extact path="/types">
-            <h1>Hola soy pagina de tipos</h1>
-          </Route>
-          <Route extact path="/regions">
-            <h1>Hola soy pagina de regiones</h1>
-          </Route>
-          <Route extact path="/objects">
-            <h1>Hola soy pagina de objetos</h1>
-          </Route>
           <Route extact path="/">
             <TitleMain />
           </Route>

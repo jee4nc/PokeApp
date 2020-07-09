@@ -19,24 +19,6 @@ const PokeNavbar = () => {
           Pokedex
         </Link>
       </div>
-
-      <div className="NAV__title">
-        <Link to="/types" className="linked">
-          Tipos de Pokemon
-        </Link>
-      </div>
-
-      <div className="NAV__title">
-        <Link to="/regions" className="linked">
-          Regiones
-        </Link>
-      </div>
-
-      <div className="NAV__title">
-        <Link to="/objects" className="linked">
-          Objetos
-        </Link>
-      </div>
     </div>
   );
 };
