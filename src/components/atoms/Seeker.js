@@ -37,30 +37,32 @@ const Seeker = () => {
           <input
             className="InputSeeker"
             name="seeker_pokemon"
-            placeholder="Search your pokemon"
+            placeholder="Search your pokemon :D!"
             ref={register({ required: true })}
           />
           {errors.seeker_pokemon && <span>This field is required</span>}
           <input type="submit" />
         </form>
       </div>
-      <div className="theRialContainer">
-        {state.name && (
-          <div className="pokeCard">
-            <h3>Nombre del pokemon buscado:</h3>
-            <p>{state.name}</p>
-            <h3>Tamaño de pokemon buscado:</h3>
-            <p>{state.height}</p>
-            <h3>Nro de Pokedex del pokemon buscado:</h3>
-            <p>{state.order}</p>
-            <img
-              className="imageApi"
-              src={state.sprites.front_default}
-              alt="poke_img"
-            />
-          </div>
-        )}
-      </div>
+      {state.name && (
+        <div className="theRialContainer">
+          {state.name && (
+            <div className="pokeCard">
+              <h3>Nombre del pokemon buscado:</h3>
+              <p>{state.name}</p>
+              <h3>Tamaño de pokemon buscado:</h3>
+              <p>{state.height}</p>
+              <h3>Nro de Pokedex del pokemon buscado:</h3>
+              <p>{state.order}</p>
+              <img
+                className="imageApi"
+                src={state.sprites.front_default}
+                alt="poke_img"
+              />
+            </div>
+          )}
+        </div>
+      )}
     </div>
   );
 };
