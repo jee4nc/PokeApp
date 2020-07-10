@@ -71,3 +71,69 @@
   justify-items: center;
   padding-bottom: 80px;
 }
+
+@media (max-width: 376px) {
+  .Container_Title h1 {
+    font-size: $font-size-title-responsive;
+  }
+  .InputSeeker {
+    font-size: 1.3em;
+    width: 350px;
+  }
+  .theRialContainer {
+    width: 300px;
+  }
+  .imageApi {
+    width: 250px;
+  }
+}
+
+@media (max-width: 640px) {
+  .InputSeeker {
+    font-size: 1.3em;
+    width: 400px;
+  }
+}
+
+@media (max-width: 427px) {
+  .InputSeeker {
+    font-size: 1.3em;
+    width: 350px;
+  }
+  .theRialContainer {
+    width: 400px;
+  }
+  .imageApi {
+    width: 300px;
+  }
+}
+@media (max-width: 466px) {
+  .InputSeeker {
+    font-size: 1.3em;
+    width: 350px;
+  }
+  .theRialContainer {
+    width: 390px;
+  }
+  .imageApi {
+    width: 290px;
+  }
+}
+
+@media (max-width: 552px) {
+  .theRialContainer {
+    width: 400px;
+  }
+  .imageApi {
+    width: 300px;
+  }
+}
+
+@media (max-width: 441px) {
+  .theRialContainer {
+    width: 350px;
+  }
+  .imageApi {
+    width: 300px;
+  }
+}
