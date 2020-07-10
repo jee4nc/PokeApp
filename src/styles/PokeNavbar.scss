@@ -3,7 +3,7 @@
 .NAV {
   // border: 3px solid red;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   background-color: $base-color;
 
   &__title {
@@ -13,8 +13,6 @@
     justify-items: center;
     align-items: center;
     // border: 3px solid green;
-    ;
-
     &:hover {
       background-color: $base-hover;
     }

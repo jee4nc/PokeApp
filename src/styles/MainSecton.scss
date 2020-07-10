@@ -18,3 +18,28 @@
 .container__Image img {
   max-height: 100%;
 }
+
+// ACA IRAN LOS MEDIA QUERYS
+@media (max-width: 768px) {
+  .container__Image {
+    height: 300px;
+  }
+  .container__Titles h1 {
+    font-size: 1.2em;
+  }
+}
+@media (max-width: 376px) {
+  .container__Image {
+    height: 300px;
+  }
+  .container__Titles h1 {
+    font-size: 1.1em;
+    margin: 10px;
+    // border: 3px solid black;
+  }
+  .container__Titles {
+    display: grid;
+    // border: 2px solid red;
+    justify-items: center;
+  }
+}
